@@ -41,6 +41,6 @@ ConnectExport und dessen Autor stehen in keiner Verbindung zu Garmin.
 
 Die vollständigen Lizenztexte liegen den jeweiligen Paketen bei und sind über
 ihre Projektseiten auf <https://pypi.org> abrufbar. Auf Anfrage stellt der Autor
-sie unter <studio@tim-stegmann.de> bereit.
+sie bereit – Anfragen über <https://github.com/9tism/ConnectExport.app/issues>.
 
 Stand / Last reviewed: 2026-08-10

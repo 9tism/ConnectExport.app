@@ -66,4 +66,4 @@ and its author are not affiliated with Garmin.
 
 ---
 
-Tim Stegmann · <studio@tim-stegmann.de>
+Tim Stegmann · Questions and bug reports: <https://github.com/9tism/ConnectExport.app/issues>
