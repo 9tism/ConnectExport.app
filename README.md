@@ -7,14 +7,26 @@ own machine.
 
 ## Download & installation
 
+### Homebrew
+
+```sh
+brew install --cask 9tism/tap/connectexport
+```
+
+Upgrades then come with `brew upgrade --cask connectexport`.
+
+### Manual
+
 Get the app from **[Releases](../../releases/latest)**:
 
 1. Download `ConnectExport-<version>-macos-arm64.zip` and unpack it.
 2. Drag `ConnectExport.app` into your **Applications** folder and launch it.
 
-Built for Apple Silicon (arm64). The app is signed with a Developer ID
-certificate and notarized by Apple, so it starts without a Gatekeeper warning —
-no right-click → "Open" workaround needed.
+### Requirements
+
+Apple Silicon (arm64) and **macOS 27 or newer**. The app is signed with a
+Developer ID certificate and notarized by Apple, so it starts without a
+Gatekeeper warning — no right-click → "Open" workaround needed.
 
 ## Usage
 
@@ -31,10 +43,25 @@ Your credentials are used locally only. If you tick "Stay signed in", the login
 token is stored encrypted in the macOS keychain — your password itself is never
 stored.
 
+A small red dot on the menu bar icon means ConnectExport is not signed in to
+Garmin Connect (for example because the sign-in has expired) — open the
+interface and sign in again.
+
 The export is incremental and resumable: it keeps a manifest, skips what it
 already has and picks up where it left off. Depending on how much history your
 account holds, the first run can take several hours, because requests are
 throttled deliberately.
+
+## Uninstalling
+
+```sh
+brew uninstall --cask --zap connectexport
+```
+
+`--zap` also removes the app's settings and its login item. Your exported files
+(`~/GarminExport` by default) are deliberately left untouched. The stored Garmin
+session token lives in the macOS keychain — remove it with "Sign out" in the
+interface before uninstalling.
 
 ## License
 
